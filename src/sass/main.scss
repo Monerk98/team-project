@@ -3,9 +3,12 @@
  * Все паршалы подключаются сюда.
  */
 
-// =============UTILS=============
-@import './utils/variables';
+// Стили для файла с примером HTML-фрагмента
+@import './example';
+// ===========Utils========
+@import './utils/varibles';
 @import './utils/visually-hidden';
-// =============BASE==============
-@import './base.scss/base';
-// =============Components========
+// ===========Base=========
+@import './base/base';
+@import './base/container';
+

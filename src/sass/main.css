@@ -4,10 +4,49 @@
  * Все паршалы подключаются сюда.
  */
 
-.header {
-  color: black;
-  font-size: 40px;
-  text-align: center;
-  font-weight: 800px;
+.invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  -webkit-padding-start: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: #111518;
+  font-size: 14px;
+  letter-spacing: 0.08em;
 }
 /*# sourceMappingURL=main.css.map */
