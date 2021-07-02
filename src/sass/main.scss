@@ -3,9 +3,9 @@
  * Все паршалы подключаются сюда.
  */
 
-// =============BASE==============
-@import './base.scss/base';
 // =============UTILS=============
 @import './utils/variables';
 @import './utils/visually-hidden';
+// =============BASE==============
+@import './base.scss/base';
 // =============Components========
