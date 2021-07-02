@@ -8,6 +8,7 @@
 // ===========Utils========
 @import './utils/varibles';
 @import './utils/visually-hidden';
+@import './utils/mixins';
 // ===========Base=========
 @import './base/base';
 @import './base/container';
@@ -24,4 +25,3 @@
 @import './components/reviews';
 @import './components/contacts';
 @import './components/footer';
-
