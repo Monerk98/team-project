@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+.header {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800px;
+}
+/*# sourceMappingURL=main.css.map */
