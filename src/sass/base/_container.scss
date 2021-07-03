@@ -1,28 +1,25 @@
-.container
-{
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 // Для мобилы
-@media screen and (min-width:480px)
-{
-    .container{
+@media screen and (min-width: 480px) {
+  .container {
     max-width: 480px;
     margin: 0 auto;
-}
+  }
 }
 // Для планшета
-@media screen and (min-width:768px)
-{
-    .container{
-        max-width: 768px;
-    }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 40px;
+  }
 }
 // Для компа
-@media screen and (min-width:1200px)
-{
-    .container{
-        max-width: 1200px;
-    }
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }

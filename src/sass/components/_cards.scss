@@ -15,6 +15,7 @@
   .cards__content {
     padding: 30px 10px;
     max-width: 280px;
+    min-height: 280px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -28,12 +29,24 @@
     }
   }
 
+  .cards__content:hover .cards__svg,
+  .cards__content:focus .cards__svg {
+    fill: $front-color;
+  }
+
+  .cards__svg {
+    display: block;
+    margin: 0 auto 12px;
+    fill: $third-color;
+    transition: fill 250ms $cubik;
+  }
+
   .cards__title {
     position: relative;
     margin-bottom: 16px;
     @include font($fs: 14px, $fw: $fw-bold, $lh: 26px);
     text-align: center;
-    transition: color 250ms $timing-function;
+    transition: color 250ms $cubik;
 
     &:after {
       content: '';
@@ -45,7 +58,7 @@
       height: 2px;
       background-color: $third-color;
       transform: translateX(-50%);
-      transition: background-color 250ms $timing-function;
+      transition: background-color 250ms $cubik;
     }
   }
 
@@ -59,11 +72,66 @@
     @include font($fs: 12px, $fw: $fw-medium, $lh: 20px);
     text-align: center;
     color: $secondary-color;
-    transition: color 250ms $timing-function;
+    transition: color 250ms $cubik;
   }
 
   .cards__content:hover .cards__descr,
   .cards__content:focus .cards__descr {
     color: $front-color;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cards {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    .cards__section-title {
+      @include font($fs: 26px, $fw: $fw-black, $lh: 34px);
+    }
+
+    .cards__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 0;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: -27px;
+    }
+
+    .cards__content {
+      max-width: 334px;
+      min-height: 334px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 27px;
+    }
+
+    .cards__descr {
+      @include font($fs: 12px, $fw: $fw-medium, $lh: 28px);
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .cards {
+    .container {
+      max-width: 1314px;
+    }
+
+    .cards__section-title {
+      margin-bottom: 62px;
+      @include font($fs: 46px, $fw: $fw-black, $lh: 60px);
+      text-align: start;
+    }
+
+    .cards__content {
+      // max-width: 425px;
+      // min-height: 396px;
+    }
   }
 }
