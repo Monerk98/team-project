@@ -1,4 +1,4 @@
-.review__title1 {
+.reviews__title1 {
   font-weight: 800;
   font-size: 20px;
   line-height: 130%;
@@ -7,7 +7,7 @@
   color: #0492ff;
 }
 
-.review__title2 {
+.reviews__title2 {
   font-weight: 800;
   font-size: 14px;
   line-height: 1.21;
@@ -16,7 +16,7 @@
   color: #ff6600;
 }
 
-.review__title3 {
+.reviews__title3 {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
@@ -25,7 +25,7 @@
   color: #b9b9b9;
 }
 
-.review__subtitle {
+.reviews__subtitle {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.66;
@@ -34,66 +34,66 @@
 }
 
 @media screen and (max-width: 767px) {
-  .review {
+  .reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
-  .review__wrapper {
-    max-width: 220px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    &__wrapper {
+      max-width: 220px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .review__title2 {
-    margin-bottom: 10px;
-  }
+    &__title2 {
+      margin-bottom: 10px;
+    }
 
-  .review__title3 {
-    margin-bottom: 25px;
-  }
+    &__title3 {
+      margin-bottom: 25px;
+    }
 
-  .review__svg {
-    width: 25px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
+    &__svg {
+      width: 25px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
 
-  .review__vk-svg {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
+    &__vk-svg {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
 
-  .review__member {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    &__member {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .review__member-img {
-    width: 54px;
-    height: 54px;
-  }
+    &__member-img {
+      width: 54px;
+      height: 54px;
+    }
 
-  .review__main-img {
-    width: 90px;
-    height: 90px;
+    &__main-img {
+      width: 90px;
+      height: 90px;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 
   .color {
     color: #ff6b09;
   }
-}
-
-.review__list {
-  display: flex;
-}
-
-.review__item:not(:last-child) {
-  margin-right: 10px;
 }
