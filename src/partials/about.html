@@ -1,46 +1,60 @@
 <section class="about">
   <div class="container about__container">
     <h2 class="about__title">Teacher</h2>
-    <picture class="about__picture">
-      <source
-        srcset="
-          ./images/about/mobile/img-about-min.jpg    1x,
-          ./images/about/mobile/img-about@2x-min.jpg 2x
-        "
-        media="(max-width: 768px)"
-      />
-      <img src="./images/about/mobile/img-about-min.jpg" alt="Teacher Photo" />
-    </picture>
-    <h3 class="about__subtitle">Elena Moreva</h3>
+    <div class="about__tablet">
+      <div>
+        <picture class="about__picture">
+          <source
+            srcset="
+              ./images/about/tablet/img-about-min.jpg    1x,
+              ./images/about/tablet/img-about@2x-min.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/about/mobile/img-about-min.jpg    1x,
+              ./images/about/mobile/img-about@2x-min.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="./images/about/mobile/img-about-min.jpg" alt="Teacher Photo" />
+        </picture>
+      </div>
 
-    <ul class="about__list">
-      <li class="about__item">
-        <p class="about__text">6 yeards of experience in preparing students for UPE</p>
-      </li>
+      <div class="about__second-block">
+        <h3 class="about__subtitle">Elena Moreva</h3>
 
-      <li class="about__item">
-        <p class="about__text">Own result of passing VNO - 197 points 2 years in a row</p>
-      </li>
+        <ul class="about__list">
+          <li class="about__item">
+            <p class="about__text">6 yeards of experience in preparing students for UPE</p>
+          </li>
 
-      <li class="about__item">
-        <p class="about__text">
-          Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English
-          Test)
+          <li class="about__item">
+            <p class="about__text">Own result of passing VNO - 197 points 2 years in a row</p>
+          </li>
+
+          <li class="about__item">
+            <p class="about__text">
+              Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary
+              English Test)
+            </p>
+          </li>
+        </ul>
+
+        <span class="about__decoration"></span>
+
+        <p class="about__description">
+          Graduated from the Institute of International Relations of the NAU with a degree in
+          translator-analyst.In spare time takes courses from the best universities in the world on
+          effective teaching and essay writing techniques.Completed: English Grammar and Essay
+          Writing (Berkeley), English Grammar & Style (The University of Queesland), How to Write an
+          Essay (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS
+          education), Powerful Tools for Teaching and Learning (University of Houston).
         </p>
-      </li>
-    </ul>
 
-    <span class="about__decoration"></span>
-
-    <p class="about__description">
-      Graduated from the Institute of International Relations of the NAU with a degree in
-      translator-analyst.In spare time takes courses from the best universities in the world on
-      effective teaching and essay writing techniques.Completed: English Grammar and Essay Writing
-      (Berkeley), English Grammar & Style (The University of Queesland), How to Write an Essay
-      (Berkeley), Academic and Business Writing (Berkeley), The Art of Teaching (GEMS education),
-      Powerful Tools for Teaching and Learning (University of Houston).
-    </p>
-
-    <a href="#" class="about__link">Cambrige English Entry Level Certificate</a>
+        <a href="#" class="about__link">Cambrige English Entry Level Certificate</a>
+      </div>
+    </div>
   </div>
 </section>
