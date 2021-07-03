@@ -1,0 +1,65 @@
+.benefits {
+  position: absolute;
+}
+
+.benefits__container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.benefits__title {
+  font-weight: $fw-black;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: $front-color;
+  background-color: black; // это потом нужно удалить, это мне для видимости
+
+  @media (max-width: 480px) {
+    margin-bottom: 30px;
+    display: block;
+    width: 180px;
+  }
+}
+
+.benefits__list {
+  margin: 0 auto;
+  counter-reset: counter;
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 4px;
+  padding-left: 30px;
+  padding-right: 14px;
+}
+
+.benefits__item {
+  @media (max-width: 480px) {
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.benefits__counter {
+  counter-increment: counter 0;
+  @media (max-width: 480px) {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &::before {
+    counter-increment: counter;
+    content: '— 0' counter(counter);
+    font-weight: $fw-bold;
+    line-height: 1.65;
+
+    color: $third-color;
+  }
+}
+.benefits__text {
+  font-weight: $fw-bold;
+  font-size: 14px;
+  line-height: 2;
+
+  color: $primary-color;
+}
