@@ -1,14 +1,24 @@
-.benefits {
-  position: absolute;
-}
+// .benefits {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   margin: auto;
+// }
 
 .benefits__container {
-  width: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  @media (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 .benefits__title {
+  margin-bottom: 30px;
+
   font-weight: $fw-black;
   font-size: 20px;
   line-height: 1.36;
@@ -16,34 +26,59 @@
   color: $front-color;
   background-color: black; // это потом нужно удалить, это мне для видимости
 
-  @media (max-width: 480px) {
-    margin-bottom: 30px;
+  @media (max-width: 767px) {
     display: block;
     width: 180px;
+  }
+  @media (min-width: 768px) {
+    text-align: center;
   }
 }
 
 .benefits__list {
-  margin: 0 auto;
   counter-reset: counter;
+  margin: 0 auto;
   list-style: none;
   padding-top: 20px;
   padding-bottom: 4px;
   padding-left: 30px;
   padding-right: 14px;
+  @media (max-width: 767px) {
+    max-width: 320px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding-left: 98px;
+    padding-top: 30px;
+    padding-bottom: 21px;
+    padding-right: 118px;
+  }
 }
 
 .benefits__item {
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 28px;
+    }
+  }
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 20px) / 2);
+    max-width: 236px;
+    &:nth-child(2n) {
+      margin-left: 20px;
+    }
+    &:nth-child(-n + 4) {
+      margin-bottom: 34px;
     }
   }
 }
 
 .benefits__counter {
   counter-increment: counter 0;
-  @media (max-width: 480px) {
+  @media (max-width: 1199px) {
     display: block;
     margin-bottom: 10px;
   }
