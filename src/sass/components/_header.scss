@@ -1,0 +1,210 @@
+// ==========NAV=============
+.header__nav
+{
+    display: flex;
+    margin-left: 144px;
+    @media screen and (max-width:1365px) {
+        display: none;
+    }
+}
+.title__nav
+{
+    display: flex;
+}
+// .list__nav
+// {
+    
+    
+// }
+.list__nav:not(:last-child)
+{
+    margin-right: 40px;
+}
+.link__nav
+{
+    font-weight: $fw-bold;
+    font-size: 14px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 57px;
+    color: $secondary-color;
+    transition: color 250ms $cubik;
+    // padding-bottom: 10px;
+    &:focus,
+    &:hover
+{
+    color:$third-color;
+}
+}
+// =========LOGO START============
+.header__container
+{
+    display: flex;
+    position: relative;
+    @media screen and (min-width:320px)
+    {
+        max-width: 320px;
+        margin: auto;
+    }
+    @media screen and (min-width:768px)
+    {
+        max-width: 687px;
+        margin: auto;
+    }
+    @media screen and (min-width:1366px)
+    {
+        max-width: 1316px;
+        margin: auto;
+    }
+}
+.logo__container
+{
+    display: inline-flex;
+    flex-direction: column;
+    width: 120px;
+    @media screen and (max-width:767px)
+    {
+        width: 80px;
+    }
+}
+.header__link
+{
+    display: inline-block;
+    @media screen and (max-width:767px)
+    {
+        padding-top: 33px;
+    }
+    @media screen and (min-width:768px)
+    {
+        padding-top: 41px;
+    }
+}
+.img__container
+{
+    display: inline-flex;
+}
+.logo
+{
+    font-weight: $fw-black;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: $primary-color;
+    @media screen and (max-width:767px)
+    {
+        font-size: 18px;
+    }
+}
+
+.logo__camp
+{
+    width: 22px;
+    height: 30px;
+    @media screen and(max-width:767px)
+    {
+        width: 14px;
+        height: 19px;
+    }
+}
+.inner__container
+{
+    line-height: 0;
+}
+.logo__down
+{
+    font-weight: $fw-bold;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $third-color;
+    margin-right: 6px;
+    @media  screen and (max-width:767px) {
+        margin-right: 3px;
+        font-size: 6px;
+    }
+}
+.logo__english
+{
+    font-weight: $fw-bold;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $primary-color;
+    @media screen and (max-width:767px)
+    {
+        font-size: 6px;
+    }
+}
+// =========LOGO END============
+// =========BUTTON-menu==========
+.header__button
+{
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: transparent;
+    line-height: 0;
+    margin-left: auto;
+    position: absolute;
+    @media screen and (max-width:767px)
+    {
+        top: 38px;
+        right: 20px;
+    }
+    @media screen and (min-width:768px)
+    {
+        top: 60px;
+        right: 40px;
+    }
+    @media screen and (min-width:1366px)
+    {
+        display: none;
+    }
+}
+// =========BUTTON-menu end======
+// =========BUTTON-consultation===
+
+.header__consultation
+{
+    cursor: pointer;
+    padding: 0;
+    @media  screen and (max-width:767px)
+    {
+     display: none;   
+    }
+    @media screen and (min-width:768px) and (max-width:1365px)
+    {
+        margin-top: 41px;
+        font-weight: $fw-bold;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color:$third-color;
+        background-color: transparent;
+        border: 2px solid $third-color;
+        padding: 15px 5px 15px 5px;
+        margin-right: 60px;
+        margin-left: auto;
+    }
+    @media screen and (min-width:1366px)
+    {
+        margin-top: 30px;
+        font-weight: $fw-bold;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color:$third-color;
+        background-color: transparent;
+        border: 2px solid $third-color;
+        padding: 26px 24px 26px 24px;
+        // margin-right: 60px;
+        margin-left: auto;
+    }
+}
+// =========BUTTON-consultation end===
+
