@@ -78,6 +78,9 @@
         d="M0.718-0.021c-0.157 0-0.284 0.127-0.284 0.284v29.311c0 0.157 0.127 0.284 0.284 0.284s0.284-0.127 0.284-0.284v-29.311c0-0.157-0.127-0.284-0.284-0.284z"
       />
 </symbol>
+<symbol id="icon-menu" viewBox="0 0 48 32">
+<path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
+</symbol>
 <!-- END svg-icons for section HOW WE DO IT -->
 
 <!-- svg-icons for section OUR PROGRAM -->
