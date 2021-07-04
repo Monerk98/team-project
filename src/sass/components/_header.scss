@@ -105,6 +105,11 @@
     {
         width: 14px;
         height: 19px;
+        margin-top: 5px;
+    }
+    @media screen and (min-width:1366px)
+    {
+        margin-top: 5px;
     }
 }
 .inner__container
