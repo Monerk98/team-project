@@ -18,21 +18,11 @@
     position: relative;
     margin-left: auto;
     padding-left: 26px;
-    // max-width: 202px;
     @include font($fs: 14px, $fw: 900, $lh: 28px);
     text-transform: uppercase;
 
-    &:not(:last-child) {
-      border-left: 1px solid $front-color;
-      padding-bottom: 40px;
-    }
-
     &:last-of-type {
       margin-top: -10px;
-    }
-
-    &:first-of-type {
-      line-height: 15px;
     }
 
     &:before {
@@ -47,10 +37,6 @@
       background: url('../images/our-program/elipse.svg');
       background-repeat: no-repeat;
     }
-
-    &:first-of-type:before {
-      top: 0;
-    }
   }
 
   .program__sub-item {
@@ -58,10 +44,6 @@
     @include font($fs: 12px, $fw: 900, $lh: 20px);
     color: $third-color;
     text-transform: none;
-
-    // &:first-of-type {
-    //   margin-top: 10px;
-    // }
   }
 
   .program__descr-item {
@@ -139,10 +121,6 @@
       }
     }
 
-    // .program__item-main {
-    //   max-width: 420px;
-    // }
-
     .program__sub-list {
       display: flex;
     }
@@ -168,6 +146,136 @@
       height: 280px;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('../images/our-program/tablet/tablet@1x.jpg');
+    }
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 1365px),
+  (min-resolution: 192dpi) and (max-width: 1365px),
+  (min-resolution: 2dppx) and (max-width: 1365px) {
+  .program {
+    .program__bg-container {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/our-program/tablet/tablet@2x.jpg');
+    }
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .program {
+    .program__item-main {
+      &:not(:last-child) {
+        border-left: 1px solid $front-color;
+        padding-bottom: 40px;
+      }
+
+      &:first-of-type {
+        line-height: 15px;
+      }
+
+      &:first-of-type:before {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .program {
+    padding: 0;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .program__title {
+      margin-bottom: 0;
+      padding-top: 120px;
+      padding-bottom: 100px;
+      padding-left: 25px;
+      padding-right: 25px;
+      @include font($fs: 46px, $fw: 800, $lh: 60px);
+    }
+
+    .program__list-wrapper {
+      padding-left: 0;
+    }
+
+    .program__list-main {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .program__item-main {
+      padding-left: 0;
+      width: 240px;
+
+      &:before {
+        position: absolute;
+        top: -66px;
+        left: 0;
+      }
+
+      &:last-of-type {
+        margin-top: 0;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 30px;
+      }
+    }
+
+    .program__list-main {
+      display: flex;
+      border-top: 1px solid $front-color;
+      padding-top: 60px;
+    }
+
+    .program__item-main {
+      @include font($fs: 20px, $fw: $fw-bold, $lh: 28px);
+    }
+
+    .program__sub-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .program__sub-item {
+      margin-top: 25px;
+      width: 240px;
+      @include font($fs: 20px, $fw: $fw-bold, $lh: 32px);
+
+      &:not(:last-of-type) {
+        margin-right: 0;
+      }
+    }
+
+    .program__descr-item {
+      @include font($fs: 18px, $fw: $fw-medium, $lh: 28px);
+    }
+
+    .program__bg-container {
+      margin-left: 0;
+      transform: translate(-160px, -150px);
+      max-width: 663px;
+      height: 502px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/our-program/desktop/desktop@1x.jpg');
+    }
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1366px),
+  (min-resolution: 192dpi) and (min-width: 1366px),
+  (min-resolution: 2dppx) and (min-width: 1366px) {
+  .program {
+    .program__bg-container {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/our-program/desktop/desktop@2x.jpg');
     }
   }
 }
