@@ -1,28 +1,60 @@
 .advantages {
   padding-top: 25px;
+  // padding-bottom: 50px;
+
   &__list {
+    padding: 0 32px;
+  }
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+
+    width: 215px;
+    height: 60px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 21px;
+  }
+
+  &__item::before {
+    display: inline-block;
+    content: '';
+
+    margin-right: 10px;
+
+    min-width: 60px;
+    height: 60px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
     font-family: $font-primary;
     font-weight: $fw-bold;
     font-size: 14px;
     line-height: 1.64;
     letter-spacing: 0.08em;
   }
+}
 
-  &__item {
-    display: flex;
-    width: 216px;
-  }
+.advantages__item--student::before {
+  background-image: url(../images/advantages/student.svg);
+}
+.advantages__item--mobile::before {
+  background-image: url(../images/advantages/mobile.svg);
+}
+.advantages__item--insurance::before {
+  background-image: url(../images/advantages/insurance.svg);
+}
 
-  &__item::before {
-    content: '';
-    margin-right: 10px;
+.advantages__content-box {
+  width: 280px;
+  margin: 0 auto;
+}
 
-    width: 35px;
-    height: 41px;
-
-    background-image: url(../images/advantages/insurance.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.advantages__item--rule-width {
+  width: 119px;
 }
