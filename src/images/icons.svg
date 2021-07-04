@@ -80,5 +80,11 @@
 </symbol>
 <!-- END svg-icons for section HOW WE DO IT -->
 
+<!-- svg-icons for section OUR PROGRAM -->
+<symbol id="icon-elipse" viewBox="0 0 32 32">
+  <path d="M16 32c-8.837 0-16-7.163-16-16s7.163-16 16-16c8.837 0 16 7.163 16 16s-7.163 16-16 16z" />
+</symbol>
+<!-- END svg-icons for section OUR PROGRAM -->
+
 </defs>
 </svg>
