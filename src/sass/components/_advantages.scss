@@ -1,0 +1,28 @@
+.advantages {
+  padding-top: 25px;
+  &__list {
+    font-family: $font-primary;
+    font-weight: $fw-bold;
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: 0.08em;
+  }
+
+  &__item {
+    display: flex;
+    width: 216px;
+  }
+
+  &__item::before {
+    content: '';
+    margin-right: 10px;
+
+    width: 35px;
+    height: 41px;
+
+    background-image: url(../images/advantages/insurance.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
