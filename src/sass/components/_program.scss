@@ -1,0 +1,87 @@
+//УДАЛИТЬ ПРИ СЛИЯНИИ (так как при создании данной ветки миксина еще не было и значения не были подтянуты)
+@function decimal-round($number, $digits: 0, $mode: round) {
+  $n: 1;
+  // $number must be a number
+  @if type-of($number) != number {
+    @warn '#{ $number } is not a number.';
+    @return $number;
+  }
+  // $digits must be a unitless number
+  @if type-of($digits) != number {
+    @warn '#{ $digits } is not a number.';
+    @return $number;
+  } @else if not unitless($digits) {
+    @warn '#{ $digits } has a unit.';
+    @return $number;
+  }
+  @if $digits > 0 {
+    @for $i from 1 through $digits {
+      $n: $n * 10;
+    }
+  }
+  @if $mode == round {
+    @return round($number * $n) / $n;
+  } @else if $mode == ceil {
+    @return ceil($number * $n) / $n;
+  } @else if $mode == floor {
+    @return floor($number * $n) / $n;
+  } @else {
+    @warn '#{ $mode } is undefined keyword.';
+    @return $number;
+  }
+}
+
+@mixin font($fs: 14px, $fw: 400, $lh: 24px) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: decimal-round($lh / $fs, 2);
+}
+//УДАЛИТЬ ВСЕ ЧТО ВІШЕ ПРИ СЛИЯНИИ
+
+//будет удален после добвалния данного значения в глобальные стили
+li {
+  list-style: none;
+}
+
+.program {
+  padding: 50px 0;
+  background-color: $primary-color;
+  color: $front-color;
+
+  .program__title {
+    margin-bottom: 43px;
+    @include font($fs: 20px, $fw: 800, $lh: 26px);
+    text-align: center;
+  }
+
+  .program__item-main {
+    margin-left: auto;
+    padding-left: 26px;
+    padding-bottom: 40px;
+    max-width: 202px;
+    @include font($fs: 14px, $fw: 900, $lh: 28px);
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      border-left: 1px solid $front-color;
+    }
+
+    &:last-of-type {
+      margin-top: -10px;
+    }
+  }
+
+  .program__sub-item {
+    margin-top: 5px;
+    @include font($fs: 12px, $fw: 900, $lh: 20px);
+    color: $third-color;
+    text-transform: none;
+  }
+
+  .program__descr-item {
+    margin-top: 5px;
+    @include font($fs: 12px, $fw: 500, $lh: 20px);
+    color: $secondary-color;
+    text-transform: none;
+  }
+}
