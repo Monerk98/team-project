@@ -4,7 +4,7 @@
     margin-right: auto;
   }
 
-  padding: 50px 0 537px;
+  padding: 50px 0 397px;
   background-color: $primary-color;
   color: $front-color;
 
@@ -18,13 +18,13 @@
     position: relative;
     margin-left: auto;
     padding-left: 26px;
-    padding-bottom: 40px;
-    max-width: 202px;
+    // max-width: 202px;
     @include font($fs: 14px, $fw: 900, $lh: 28px);
     text-transform: uppercase;
 
     &:not(:last-child) {
       border-left: 1px solid $front-color;
+      padding-bottom: 40px;
     }
 
     &:last-of-type {
@@ -59,9 +59,9 @@
     color: $third-color;
     text-transform: none;
 
-    &:first-of-type {
-      margin-top: 10px;
-    }
+    // &:first-of-type {
+    //   margin-top: 10px;
+    // }
   }
 
   .program__descr-item {
@@ -73,7 +73,7 @@
 
   .program__bg-container {
     margin-left: auto;
-    transform: translateX(20px);
+    transform: translate(20px, -40px);
     max-width: 110px;
     height: 137px;
     background-color: $primary-color;
@@ -91,6 +91,83 @@
     .program__bg-container {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('../images/our-program/mobile/mobile@2x.jpg');
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .program {
+    .program__item-main {
+      margin-left: 88px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .program__item-main {
+    max-width: 202px;
+  }
+
+  .program__sub-item {
+    &:first-of-type {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .program {
+    padding-top: 60px;
+    padding-bottom: 200px;
+
+    .program__title {
+      margin-bottom: 52px;
+      @include font($fs: 26px, $fw: 800, $lh: 34px);
+      text-align: start;
+    }
+
+    .program__list-wrapper {
+      padding-left: 60px;
+    }
+
+    .program__item-main {
+      margin-left: 0;
+      padding-left: 56px;
+
+      &:not(:last-of-type) {
+        padding-bottom: 30px;
+      }
+    }
+
+    // .program__item-main {
+    //   max-width: 420px;
+    // }
+
+    .program__sub-list {
+      display: flex;
+    }
+
+    .program__sub-item {
+      margin-top: 10px;
+      width: 155px;
+
+      &:not(:last-of-type) {
+        margin-right: 50px;
+      }
+    }
+
+    .program__descr-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .program__bg-container {
+      margin-left: auto;
+      transform: translate(40px, -130px);
+      max-width: 384px;
+      height: 280px;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/our-program/tablet/tablet@1x.jpg');
     }
   }
 }
