@@ -14,10 +14,6 @@
     padding-top: 50px;
   }
 
-  @media screen and (min-width: 1366px) {
-    padding-top: 141px;
-  }
-
   &__container {
     width: 100%;
     margin-left: auto;
@@ -35,11 +31,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     padding-bottom: 30px;
-
-    @media screen and (min-width: 1366px) {
-      font-size: 46px;
-      padding-bottom: 50px;
-    }
   }
 
   &__list {
@@ -56,24 +47,11 @@
       padding-right: 50px;
       padding-left: 79px;
     }
-
-    @media screen and (min-width: 1366px) {
-      padding: 54px 114px 45px;
-      font-size: 20px;
-    }
   }
 
   &__item {
     display: flex;
     padding-left: 20px;
-
-    @media screen and (min-width: 768px) {
-      padding-left: 32px;
-    }
-
-    @media screen and (min-width: 1366px) {
-      padding-left: 40px;
-    }
 
     &:not(:last-child) {
       border-left: 1px dashed $secondary-color;
@@ -95,12 +73,6 @@
 
       @media screen and (min-width: 768px) {
         left: 73px;
-      }
-
-      @media screen and (min-width: 1366px) {
-        left: 108px;
-        width: 22.49px;
-        height: 29.6px;
       }
     }
   }
