@@ -1,0 +1,151 @@
+.footer {
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+  @media (min-width: 1366px) {
+    padding-top: 103px;
+    padding-bottom: 56px;
+  }
+}
+
+.footer .container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.footer__contacts {
+  @media (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) and (max-width: 1365px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (min-width: 1366px) {
+    margin-bottom: 35px;
+  }
+}
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $fw-semi-bold;
+  line-height: 1.21;
+
+  color: $primary-color;
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  @media (min-width: 768px) {
+    font-size: 20px;
+    padding-right: 24px;
+    border-right: 1px solid $secondary-color;
+    margin-right: 24px;
+  }
+  @media (min-width: 768px) and (max-width: 1365px) {
+    margin-left: auto;
+  }
+
+  @media (min-width: 1366px) {
+    font-size: 30px;
+    line-height: 1.23;
+    padding-right: 16px;
+    margin-left: 312px;
+  }
+}
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: $third-color;
+  @media (min-width: 768px) {
+    width: 24px;
+    height: 23px;
+  }
+  @media (min-width: 1366px) {
+    width: 30px;
+    height: 29px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+.footer__box-icon {
+  @media (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/footer/instagram-icon.svg),
+    radial-gradient(
+      110.28% 110.28% at 20.5% 87.39%,
+      #fae100 0%,
+      #fadc04 5.44%,
+      #fbce0e 11.67%,
+      #fcb720 18.29%,
+      #fe9838 25.14%,
+      #ff7950 30.54%,
+      #ff1c74 49.22%,
+      #6c1cd1 100%
+    ),
+    linear-gradient(318.52deg, rgba(131, 58, 180, 0) 64.74%, #833ab4 106.74%),
+    linear-gradient(315deg, rgba(131, 58, 180, 0) 39.5%, #833ab4 115.97%),
+    linear-gradient(348.01deg, rgba(131, 58, 180, 0) 16.68%, #833ab4 83.38%),
+    linear-gradient(314.85deg, rgba(131, 58, 180, 0) 68.66%, #833ab4 99.14%),
+    linear-gradient(
+      180deg,
+      rgba(250, 225, 0, 0) 41.26%,
+      rgba(252, 168, 0, 0.305882) 65.21%,
+      rgba(254, 115, 0, 0.627451) 90.26%,
+      rgba(255, 82, 0, 0.866667) 109.08%,
+      #ff4500 119.35%
+    ),
+    linear-gradient(
+      299.36deg,
+      rgba(161, 181, 216, 0) 61.06%,
+      rgba(144, 162, 189, 0.309804) 110.82%,
+      rgba(124, 139, 156, 0.756863) 182.56%,
+      #748290 221.9%
+    );
+  border-radius: 14px;
+}
+.footer__copyright {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-weight: $fw-medium;
+  line-height: 2;
+
+  color: $secondary-color;
+  background-color: $primary-color;
+  @media (min-width: 768px) {
+    padding-left: 40px;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 30px;
+  @media (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 1366px) {
+    width: 128px;
+    height: 45px;
+  }
+}
