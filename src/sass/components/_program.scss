@@ -20,6 +20,7 @@ li {
   }
 
   .program__item-main {
+    position: relative;
     margin-left: auto;
     padding-left: 26px;
     padding-bottom: 40px;
@@ -34,6 +35,27 @@ li {
     &:last-of-type {
       margin-top: -10px;
     }
+
+    &:first-of-type {
+      line-height: 15px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: -6px;
+      display: block;
+      width: 12px;
+      height: 12px;
+      fill: $third-color;
+      background: url('../images/our-program/elipse.svg');
+      background-repeat: no-repeat;
+    }
+
+    &:first-of-type:before {
+      top: 0;
+    }
   }
 
   .program__sub-item {
@@ -41,6 +63,10 @@ li {
     @include font($fs: 12px, $fw: 900, $lh: 20px);
     color: $third-color;
     text-transform: none;
+
+    &:first-of-type {
+      margin-top: 10px;
+    }
   }
 
   .program__descr-item {
