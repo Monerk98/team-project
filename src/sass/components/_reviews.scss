@@ -166,7 +166,7 @@
   }
 
   .review_wrapper-1 {
-    padding: 40px 52px 40px 53px;
+    padding: 40px 40px 40px 40px;
     display: flex;
     flex-direction: row;
     padding-bottom: 40px;
@@ -265,10 +265,10 @@
   }
 
   .reviews__wrapper {
-    padding-left: 50px;
   }
 
   .review_wrapper-1 {
+    margin: 0 auto;
     padding: 50px 112px 51px 82px;
   }
 
@@ -283,21 +283,21 @@
 
   .reviews__title2 {
     font-size: 30px;
-    line-height: 37px;
+    line-height: 1.23;
     text-align: start;
     margin-bottom: 20px;
   }
 
   .reviews__title3 {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     text-align: start;
     margin-bottom: 20px;
   }
 
   .reviews__subtitle {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.55;
     text-align: start;
   }
 
