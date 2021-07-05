@@ -27,7 +27,9 @@
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     list-style: none;
-    g &:hover,
+    transition: background-color 250ms $cubik;
+
+    &:hover,
     &:focus {
       background-color: $third-color;
       color: $front-color;
