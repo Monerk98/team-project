@@ -1,12 +1,20 @@
 .contact {
-  padding-top: 50px;
-  padding-bottom: 50px;
-
-  background: $primary-color;
+  max-width: 100%;
+  background-color: $primary-color;
   background-image: url('../images/contacts/contacts-mob.png');
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: center;
+
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
 }
+
+
+
+
 
 .form {
   display: flex;
@@ -116,14 +124,16 @@
 //планшет
 @media screen and (min-width: 768px) {
   .contact {
-    padding-top: 50px;
-    padding-bottom: 71px;
-
     background: $primary-color;
     background-image: url('../images/contacts/contacts-tab.png');
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: center;
+    &__container {
+      padding-top: 50px;
+      padding-bottom: 71px;
+    }
   }
+
 
   .form {
     &__title {
@@ -153,11 +163,15 @@
 //ПК
 @media screen and (min-width: 1366px) {
   .contact {
-    padding: 136px 100px 20px 100px;
     background: $primary-color;
     background-image: url('../images/contacts/contacts-pc.png');
     background-repeat: no-repeat;
     background-position: 50% 5%;
+    background-position: center;
+    
+    &__container{
+      padding: 136px 100px 20px 100px;
+    }
   }
 
   .form {
@@ -197,7 +211,7 @@
 
       max-width: 354px;
       padding: 25px 71px;
-      max-width: 260px;
+      max-width: 354px;
     }
   }
 }
