@@ -4,7 +4,11 @@
     margin-right: auto;
   }
 
-  padding: 50px 0 397px;
+  .program__container {
+    position: relative;
+  }
+
+  padding: 50px 0 50px;
   background-color: $primary-color;
   color: $front-color;
 
@@ -54,9 +58,10 @@
   }
 
   .program__bg-container {
-    margin-left: auto;
-    transform: translate(20px, -40px);
-    max-width: 110px;
+    position: absolute;
+    bottom: -104px;
+    right: 0;
+    width: 105px;
     height: 137px;
     background-color: $primary-color;
     background-position: center center;
@@ -100,7 +105,7 @@
 @media screen and (min-width: 768px) {
   .program {
     padding-top: 60px;
-    padding-bottom: 200px;
+    padding-bottom: 189px;
 
     .program__title {
       margin-bottom: 52px;
@@ -140,9 +145,10 @@
     }
 
     .program__bg-container {
-      margin-left: auto;
-      transform: translate(40px, -130px);
-      max-width: 384px;
+      position: absolute;
+      bottom: -138px;
+      right: 0;
+      width: 384px;
       height: 280px;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('../images/our-program/tablet/tablet@1x.jpg');
@@ -183,6 +189,7 @@
 @media screen and (min-width: 1366px) {
   .program {
     padding: 0;
+    padding-bottom: 153px;
 
     .container {
       padding-left: 0;
@@ -259,9 +266,12 @@
     }
 
     .program__bg-container {
-      margin-left: 0;
-      transform: translate(-160px, -150px);
-      max-width: 663px;
+      position: absolute;
+      bottom: -350px;
+      right: 0;
+      left: -150px;
+      z-index: 0;
+      width: 663px;
       height: 502px;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('../images/our-program/desktop/desktop@1x.jpg');
