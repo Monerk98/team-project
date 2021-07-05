@@ -42,6 +42,10 @@
     margin-bottom: 20px;
   }
 
+  &__label-bottom {
+    margin-bottom: 50px;
+  }
+
   &__input {
     padding-left: 20px;
     width: 100%;
@@ -78,13 +82,11 @@
   }
 
   &__btn {
-    margin-top: 30px;
-    padding: 14px 20px;
     align-self: center;
-
-    max-width: 260px;
-    height: 50;
-    font-weight: 700;
+    padding: 14px 30px;
+      
+    height: 50px;
+    font-weight: $fw-bold;
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.08em;
@@ -132,20 +134,20 @@
       line-height: 1.21;
     }
 
-    &__label {
+    &__label, &__label-bottom {
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
+    &__label-bottom {
+    margin-bottom: 30px;
+  }
+
     &__input {
       padding-left: 27px;
       width: 324px;
       height: 48px;
-    }
-
-    &__btn {
-      margin-top: 10px;
     }
   }
 }
@@ -175,16 +177,27 @@
       line-height: 1,23;
     }
   
-    &__label {
+    &__label, &__label-bottom {
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
+    &__label-bottom {
+    margin-bottom: 77px;
+  }
+
     &__input {
       padding-left: 40px;
       width: 478px;
       height: 68px;
+    }
+
+    &__btn {
+      align-self: unset;
+   
+      max-width: 354px;
+    height: 67px;
     }
   
   }
