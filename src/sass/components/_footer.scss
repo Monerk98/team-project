@@ -8,11 +8,8 @@
     padding-bottom: 56px;
   }
 }
-
-// Стили контейнера
 .footer .container {
   padding: 0;
-  margin: 0 auto;
 }
 // Обертка для контактов
 .footer__contacts {
@@ -143,12 +140,10 @@
   padding-bottom: 21px;
   font-weight: $fw-medium;
   line-height: 2;
+  padding-left: 40px;
 
   color: $secondary-color;
   background-color: $primary-color;
-  @media (min-width: 768px) {
-    padding-left: 40px;
-  }
 }
 
 // =========LOGO START============
@@ -161,22 +156,6 @@
   }
 }
 
-.header__container {
-  display: flex;
-  position: relative;
-  @media screen and (min-width: 320px) {
-    max-width: 320px;
-    margin: auto;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 687px;
-    margin: auto;
-  }
-  @media screen and (min-width: 1366px) {
-    max-width: 1316px;
-    margin: auto;
-  }
-}
 .footer-logo__container {
   display: inline-flex;
   flex-direction: column;
