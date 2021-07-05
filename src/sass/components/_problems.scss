@@ -1,22 +1,145 @@
-.problems {
-  padding: 30px 0 0 0;
-  background: $primary-color;
+.container {
+  margin: 0 auto;
 }
 
-.problems__title-box {
-  height: 545px;
+/* -------------------------------- Секция ------------------------------- */
+.problems {
+  padding: 25px 0 50px 0;
+  background-image: linear-gradient($primary-color 72%, $front-color 0%);
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient($primary-color 62%, $front-color 0%);
+  }
+  @media (min-width: 1366px) {
+    background-image: linear-gradient($primary-color 78%, $front-color 0%);
+    position: relative;
+    padding-top: 100px;
+    height: 710px;
+  }
 }
+.problems__bg-icon {
+  @media (min-width: 1366px) {
+    position: absolute;
+    width: 455px;
+    height: 475px;
+
+    bottom: 155px;
+    right: -55px;
+
+    background-image: url(../images/problems/fire.svg);
+  }
+}
+/* -------------------------------- Заголовок ------------------------------- */
 
 .problems__title {
-  font-weight: 800;
+  font-weight: $fw-black;
   font-size: 24px;
   line-height: 1.3;
   letter-spacing: 0.03em;
 
-  padding: 30px 0 0 0;
-
   color: $front-color;
+
+  @media (max-width: 320px) {
+    font-size: calc(4px + 6vw);
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 auto 25px;
+    max-width: 280px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 25px;
+    width: 425px;
+  }
+  @media (min-width: 1366px) {
+    margin-bottom: 70px;
+    width: 866px;
+
+    font-size: 46px;
+    line-height: 1.3;
+  }
 }
-.problems__title span {
+
+.text-wrapping {
+  display: block;
+}
+
+.accent-text {
+  color: $third-color;
+}
+/* -------------------------------- Контент ------------------------------- */
+.problems__list {
+  margin: 0 auto;
+
+  height: 510px;
+
+  background: $front-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  padding: 19px 20px 19px 31px;
+
+  font-weight: $fw-bold;
+  line-height: 1.71;
+
+  @media (max-width: 767px) {
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 26px 113px 30px 96px;
+    height: 303px;
+  }
+
+  @media (min-width: 1366px) {
+    position: absolute;
+    bottom: 0px;
+
+    width: 1314px;
+    height: 362px;
+    padding: 70px 113px 62px 113px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.problems__item {
+  display: flex;
+  flex-direction: column;
+
+  counter-increment: counter 0;
+
+  @media (min-width: 768px) {
+    max-width: 210px;
+    height: 70px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+  @media (min-width: 1366px) {
+    max-width: 336px;
+    height: 100px;
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
+}
+
+.problems__item:not(:last-child) {
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
+.problems__item::before {
+  counter-increment: counter;
+  content: '— 0' counter(counter);
+
+  margin-bottom: 5px;
+
+  font-weight: $fw-bold;
+  line-height: 1.65;
+
   color: $third-color;
 }
