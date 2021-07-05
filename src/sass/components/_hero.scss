@@ -2,9 +2,20 @@
 {
     padding-top: 50px;
     padding-bottom: 77px;
+    @media screen and (min-width:768px) and (max-width:1365px)
+    {
+        padding-top: 70px;
+        padding-bottom: 110px;
+    }
+    @media screen and (min-width:1366px)
+    {
+    padding-top: 43px;
+    padding-bottom: 119px;
+    }
 }
 .hero__container
 {
+    position: relative;
     @media screen and (min-width:320px)
     {
         max-width: 320px;
@@ -32,21 +43,49 @@
     letter-spacing: 0.03em;
     color: $primary-color;
     margin-bottom: 30px;
+    @media screen and (min-width:767px) and (max-width:1365px)
+    {
+        font-size: 26px;
+        margin-bottom: 90px;
+        width: 332px;
+    }
+    @media screen and (min-width:1366px)
+    {
+        width: 660px;
+        font-size: 58px;
+        margin-bottom: 104px;
+        padding-top: 125px;
+    }
 }
 .hero__paragrapth
 {
     margin-bottom: 30px;
+    @media screen and (min-width:1366px)
+    {
+        margin-bottom: 109px;
+        width: 493px;
+        line-height: 1.65;
+        font-size: 20px;
+    }
 }
 .p__one
 {
     font-weight: $fw-medium;
     line-height: 1.5;
     color: $secondary-color;
+    display: inline-flex;
+    width: 100%;
 }
 .p__two
 {
     font-weight: $fw-bold;
     line-height: 1.5;
+    display: inline-flex;
+    width: 100%;
+    @media screen and (min-width:1366px)
+    {
+        display: contents;
+    }
 }
 .p__three
 {
@@ -56,6 +95,7 @@
 }
 .hero__btn
 {
+    cursor: pointer;
     font-weight: $fw-bold;
     font-size: 12px;
     line-height: 1.25;
@@ -67,4 +107,47 @@
     width: 260px;
     margin-left: 10px;
     margin-bottom: 30px;
+    @media screen and (min-width:767px) and (max-width:1365px)
+    {
+        margin-left: 0;
+        
+    }
+    @media screen and (min-width:1366px)
+    {
+        margin-left: 70px;
+        width: 354px;
+        line-height: 1.21;
+        padding: 27px 70px 27px 70px;
+        letter-spacing: 0.14em;
+    }
+}
+.hero__pic
+{
+    @media screen and (max-width:767px)
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.teacher__pic
+{
+    @media screen and (max-width:767px)
+    {
+        width: 208px;
+    }
+    @media screen and (min-width:768px) and (max-width:1365px)
+    {
+        width: 375px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    @media screen and (min-width:1366px)
+    {
+        width: 841px;
+        position: absolute;
+        top: 0;
+        left: 570px;
+    }
 }
