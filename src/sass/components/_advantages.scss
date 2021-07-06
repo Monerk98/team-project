@@ -3,11 +3,8 @@
 }
 
 .advantages {
-  padding-top: 25px;
 
-  @media (min-width: 768px) {
-    padding-top: 50px;
-  }
+  padding-bottom: 45px;
 
   &__list {
     display: flex;
