@@ -13,7 +13,7 @@
     margin: 0 auto;
 
     @media screen and (min-width: 768px) {
-      max-width: 688px;
+      max-width: 768px;
     }
 
     @media screen and (min-width: 1366px) {
@@ -135,7 +135,7 @@
     max-width: 253px;
 
     @media screen and (min-width: 768px) {
-      max-width: 375px;
+      min-width: 375px;
     }
 
     @media screen and (min-width: 1366px) {
@@ -167,6 +167,7 @@
     @media screen and (min-width: 768px) {
       max-width: 401px;
       font-size: 10px;
+      padding-bottom: 20px;
     }
 
     @media screen and (min-width: 1366px) {
