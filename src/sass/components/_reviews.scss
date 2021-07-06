@@ -104,9 +104,28 @@
   }
 
   .reviews__member {
+    margin: 0 auto;
+    position: relative;
+    max-width: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  .reviews__svg-bottom-left {
+    position: absolute;
+    left: 0;
+    width: 25px;
+    fill: $third-color;
+  }
+
+  .reviews__svg-bottom-right {
+    position: absolute;
+    right: 0;
+    width: 25px;
+    fill: $third-color;
   }
 
   .reviews__list {
@@ -213,10 +232,6 @@
     fill: $third-color;
   }
 
-  .t4 {
-    display: flex;
-  }
-
   .reviews__title1 {
     font-size: 26px;
     padding-bottom: 30px;
@@ -268,12 +283,6 @@
 }
 
 @media screen and (min-width: 1366px) {
-  .reviews {
-  }
-
-  .reviews__wrapper {
-  }
-
   .review_wrapper-1 {
     margin: 0 auto;
     padding: 50px 112px 51px 82px;
@@ -308,14 +317,7 @@
     text-align: start;
   }
 
-  // .reviews__list-more {
+  // .reviews__svg-left {
+  //   right: 250px;
   // }
-
-  .reviews__svg-left {
-    right: 250px;
-  }
 }
-
-// .reviews__svg-right {
-//
-// }
