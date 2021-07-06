@@ -123,6 +123,7 @@
     background-image: url('../images/contacts/mob@2x.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }
 
@@ -171,6 +172,8 @@
   (min-resolution: 2dppx) and (min-width: 768px) {
   .contacts {
     background-image: url('../images/contacts/tab@2x.png');
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -178,13 +181,14 @@
 @media screen and (min-width: 1366px) {
   .contacts {
     background: $primary-color;
-    background-image: url('../images/contacts/pc.png');
+    background-image: url('../images/contacts/newpc.png');
     background-repeat: no-repeat;
-    background-position: 50% 5%;
     background-position: center;
+    background-size: cover;
+
 
     &__container {
-      padding: 136px 150px 62px 150px;
+      padding: 100px 150px 62px 150px;
     }
   }
 
@@ -197,7 +201,7 @@
     }
 
     &__description {
-      margin-bottom: 54px;
+      margin-bottom: 56px;
 
       font-size: 30px;
       line-height: 1.23;
@@ -215,13 +219,13 @@
     }
 
     &__label-bottom {
-      margin-bottom: 77px;
+      margin-bottom: 80px;
     }
 
     &__input {
       padding-left: 40px;
       width: 478px;
-      height: 68px;
+      height: 70px;
     }
 
     &__btn {
@@ -238,6 +242,7 @@
   (min-resolution: 192dpi) and (min-width: 1366px),
   (min-resolution: 2dppx) and (min-width: 1366px) {
   .contacts {
-    background-image: url('../images/contacts/pc@2x.png');
+    background-image: url('../images/contacts/newpc@2x.png');
+    background-size: cover;
   }
 }
