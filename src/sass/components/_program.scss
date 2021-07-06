@@ -64,7 +64,7 @@
     width: 105px;
     height: 137px;
     background-color: $primary-color;
-    background-position: center center;
+    // background-position: center center;
     background-size: cover;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('../images/our-program/mobile/mobile@1x.jpg');
@@ -91,13 +91,19 @@
 }
 
 @media screen and (max-width: 767px) {
-  .program__item-main {
-    max-width: 202px;
-  }
+  .program {
+    .container {
+      max-width: 320px;
+    }
 
-  .program__sub-item {
-    &:first-of-type {
-      margin-top: 10px;
+    .program__item-main {
+      max-width: 202px;
+    }
+
+    .program__sub-item {
+      &:first-of-type {
+        margin-top: 10px;
+      }
     }
   }
 }
@@ -188,8 +194,18 @@
 
 @media screen and (min-width: 1366px) {
   .program {
+    position: relative;
     padding: 0;
     padding-bottom: 153px;
+
+    .program-line {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      top: 280px;
+      left: 0;
+      background-color: $front-color;
+    }
 
     .container {
       padding-left: 0;
@@ -210,9 +226,6 @@
     }
 
     .program__list-main {
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
       padding-left: 25px;
       padding-right: 25px;
     }
@@ -220,6 +233,7 @@
     .program__item-main {
       padding-left: 0;
       width: 240px;
+      @include font($fs: 20px, $fw: $fw-bold, $lh: 28px);
 
       &:before {
         position: absolute;
@@ -233,17 +247,13 @@
 
       &:not(:last-of-type) {
         margin-right: 30px;
+        padding-bottom: 0;
       }
     }
 
     .program__list-main {
       display: flex;
-      border-top: 1px solid $front-color;
       padding-top: 60px;
-    }
-
-    .program__item-main {
-      @include font($fs: 20px, $fw: $fw-bold, $lh: 28px);
     }
 
     .program__sub-list {
@@ -265,9 +275,16 @@
       @include font($fs: 18px, $fw: $fw-medium, $lh: 28px);
     }
 
+    .program__bg-wrapper {
+      position: relative;
+      width: 1366px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .program__bg-container {
       position: absolute;
-      bottom: -350px;
+      bottom: -380px;
       right: 0;
       left: -150px;
       z-index: 0;
