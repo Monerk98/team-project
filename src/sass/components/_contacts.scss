@@ -1,7 +1,7 @@
-.contact {
+.contacts {
   max-width: 100%;
   background-color: $primary-color;
-  background-image: url('../images/contacts/contacts-mob.png');
+  background-image: url('../images/contacts/mob.png');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -121,11 +121,23 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+ 
+    .contacts {
+      background-image: url('../images/contacts/mob@2x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+}
+
 //планшет
 @media screen and (min-width: 768px) {
-  .contact {
+  .contacts {
     background: $primary-color;
-    background-image: url('../images/contacts/contacts-tab.png');
+    background-image: url('../images/contacts/tab.png');
     background-repeat: no-repeat;
     background-position: center;
     &__container {
@@ -133,7 +145,6 @@
       padding-bottom: 71px;
     }
   }
-
 
   .form {
     &__title {
@@ -160,11 +171,21 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+ 
+    .contacts {
+      background-image: url('../images/contacts/tab@2x.png');
+    }
+}
+
+
 //ПК
 @media screen and (min-width: 1366px) {
-  .contact {
+  .contacts {
     background: $primary-color;
-    background-image: url('../images/contacts/contacts-pc.png');
+    background-image: url('../images/contacts/pc.png');
     background-repeat: no-repeat;
     background-position: 50% 5%;
     background-position: center;
@@ -186,7 +207,7 @@
       margin-bottom: 54px;
 
       font-size: 30px;
-      line-height: 1, 23;
+      line-height: 1.23;
     }
 
     &__label,
@@ -214,4 +235,13 @@
       max-width: 354px;
     }
   }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1366px),
+  (min-resolution: 192dpi) and (min-width: 1366px),
+  (min-resolution: 2dppx) and (min-width: 1366px) {
+ 
+    .contacts {
+      background-image: url('../images/contacts/pc@2x.png');
+    }
 }
