@@ -145,6 +145,8 @@
   }
 
   .cards {
+    padding-bottom: 130px;
+
     .cards__section-title {
       margin-bottom: 62px;
       @include font($fs: 46px, $fw: $fw-black, $lh: 60px);
