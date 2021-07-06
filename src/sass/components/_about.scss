@@ -154,9 +154,10 @@
     }
   }
 
-  &__description {
+  &__description-list {
+    list-style: none;
     max-width: 279px;
-    padding-top: 26px;
+    padding-top: 20px;
     padding-bottom: 10px;
     font-weight: $fw-medium;
     font-size: 12px;
@@ -172,6 +173,12 @@
       max-width: 700.58px;
       font-size: 18px;
       padding-bottom: 20px;
+    }
+  }
+
+  &__description-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
     }
   }
 
