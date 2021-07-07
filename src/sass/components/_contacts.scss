@@ -4,6 +4,7 @@
   background-image: url('../images/contacts/mob.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   &__container {
     padding-top: 56px;
@@ -134,6 +135,8 @@
     background-image: url('../images/contacts/tab.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+   
     &__container {
       padding-top: 66px;
       padding-bottom: 67px;
@@ -149,14 +152,14 @@
     }
 
     &__description {
-      margin-bottom: 20px;
+      margin-bottom: 23px;
       padding: 0 150px;
 
       line-height: 1.21;
     }
 
     &__label-bottom {
-      margin-bottom: 30px;
+      margin-bottom: 31px;
     }
 
     &__input {
@@ -172,6 +175,7 @@
   (min-resolution: 2dppx) and (min-width: 768px) {
   .contacts {
     background-image: url('../images/contacts/tab@2x.png');
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
@@ -185,7 +189,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 
     &__container {
       padding: 100px 150px 62px 150px;
@@ -228,6 +231,11 @@
       height: 70px;
     }
 
+     &__input::placeholder {
+       font-size: 20px;
+       line-height: 1.2;
+     }
+
     &__btn {
       margin: 0 auto;
 
@@ -243,6 +251,8 @@
   (min-resolution: 2dppx) and (min-width: 1366px) {
   .contacts {
     background-image: url('../images/contacts/newpc@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 }
