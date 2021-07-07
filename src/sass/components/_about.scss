@@ -8,11 +8,6 @@
 }
 
 .about {
-  &__container {
-    width: 100%;
-    margin: 0 auto;
-  }
-
   &__tablet {
     @media screen and (min-width: 768px) {
       display: flex;
