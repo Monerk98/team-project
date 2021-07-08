@@ -203,7 +203,7 @@
 {
     cursor: pointer;
     padding: 0;
-    transition: color 250ms $cubik, border 250ms $cubik;
+    transition: color 250ms $cubik, background 250ms $cubik;
     @media  screen and (max-width:767px)
     {
      display: none;   
@@ -241,8 +241,9 @@
     &:hover,
     &:focus
     {
-        color: blue;
-        border:2px solid blue;
+        
+        color: $front-color;
+        background:$third-color;
     }
 
 }
