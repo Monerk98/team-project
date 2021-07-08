@@ -177,6 +177,7 @@
     margin-right: auto;
     margin-left: auto;
     display: block;
+    transition:color 250ms $cubik, background 250ms $cubik, outline 250ms $cubik;
     // margin-left: 10px;
     margin-bottom: 55px;
     @media screen and (min-width:767px) and (max-width:1365px)
@@ -196,6 +197,13 @@
         margin-bottom: 250px;
         margin-right: 0;
         margin-left: 0;
+    }
+    &:hover,
+    &:focus
+    {
+        color:$third-color;
+        background-color: transparent;
+        outline: 2px solid $third-color; 
     }
 }
 .hero__pic
