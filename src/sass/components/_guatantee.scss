@@ -66,6 +66,7 @@
   &__item {
     display: flex;
     padding-left: 20px;
+    letter-spacing: 0.06px;
 
     @media screen and (min-width: 768px) {
       padding-left: 32px;
