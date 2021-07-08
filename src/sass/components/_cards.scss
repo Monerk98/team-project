@@ -17,6 +17,9 @@
   }
 
   .cards__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 30px 10px;
     max-width: 280px;
     min-height: 280px;
@@ -66,6 +69,12 @@
       transform: translateX(-50%);
       transition: background-color 250ms $cubik;
     }
+
+    &_first,
+    &_second,
+    &_fourth {
+      max-width: 250px;
+    }
   }
 
   .cards__content:hover .cards__title:after,
@@ -79,6 +88,7 @@
     text-align: center;
     color: $secondary-color;
     transition: color 250ms $cubik;
+    letter-spacing: 0.08em;
   }
 
   .cards__content:hover .cards__descr,
@@ -137,6 +147,16 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  .cards {
+    .cards__descr {
+      &_spacing {
+        letter-spacing: 0.07em;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1366px) {
   .container {
     max-width: 1366px;
@@ -162,6 +182,14 @@
     .cards__title {
       min-height: 53px;
       @include font($fs: 20px, $fw: $fw-black, $lh: 28px);
+
+      &_third {
+        max-width: 250px;
+      }
+
+      &_five {
+        max-width: 255px;
+      }
     }
 
     .cards__descr {
