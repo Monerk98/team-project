@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+ 
 
   &__container {
     padding-top: 56px;
@@ -125,17 +126,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+   
   }
 }
 
 //планшет
 @media screen and (min-width: 768px) {
   .contacts {
-    background: $primary-color;
     background-image: url('../images/contacts/tab.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    
    
     &__container {
       padding-top: 66px;
@@ -184,11 +183,9 @@
 //ПК
 @media screen and (min-width: 1366px) {
   .contacts {
-    background: $primary-color;
     background-image: url('../images/contacts/newpc.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-size: auto;
+    
 
     &__container {
       padding: 100px 150px 62px 150px;
@@ -253,7 +250,7 @@
   .contacts {
     background-image: url('../images/contacts/newpc@2x.png');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+     background-position: center;
+     background-size:  1680px 840px;
   }
 }
