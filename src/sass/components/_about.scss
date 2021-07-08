@@ -10,12 +10,19 @@
 .about {
   &__container {
     width: 100%;
-    margin: 0 auto;
-  }
+    margin-left: auto;
+    margin-right: auto;
 
-  &__tablet {
+    @media screen and (min-width: 320px) {
+      width: 320px;
+    }
+
     @media screen and (min-width: 768px) {
-      display: flex;
+      width: 768px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      width: 1366px;
     }
   }
 
@@ -169,12 +176,6 @@
     }
   }
 
-  &__description-item {
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
-  }
-
   &__link {
     color: $third-color;
     font-weight: $fw-medium;
@@ -193,5 +194,13 @@
   }
   @media (min-width: 1366px) {
     padding-top: 329px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__tablet {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
   }
 }
