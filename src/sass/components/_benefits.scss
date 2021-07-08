@@ -10,13 +10,10 @@
   position: relative;
   top: -1px;
   @media (max-width: 767px) {
-    background-image: linear-gradient(to bottom, $primary-color 68%, $front-color 68%);
+    background-image: linear-gradient(to bottom, $primary-color 68%, $bg-color 68%);
   }
   @media (min-width: 768px) and (max-width: 1365px) {
-    background-image: linear-gradient(to bottom, $primary-color 45%, $front-color 45%);
-  }
-  @media (min-width: 1366px) {
-    background-image: linear-gradient(to bottom, $primary-color 53%, $front-color 53%);
+    background-image: linear-gradient(to bottom, $primary-color 45%, $bg-color 45%);
   }
 }
 
@@ -28,7 +25,7 @@
   }
   @media (min-width: 1366px) {
     position: absolute;
-    top: -227px;
+    top: -199px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -95,7 +92,7 @@
 .benefits__item {
   @media (max-width: 767px) {
     &:not(:last-child) {
-      margin-bottom: 28px;
+      margin-bottom: 36px;
     }
   }
   @media (min-width: 768px) and (max-width: 1365px) {

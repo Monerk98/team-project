@@ -2,23 +2,15 @@
   width: 243px;
 
   @media screen and (min-width: 1366px) {
-    width: 579.26px;
+    width: 530px;
+    height: 667px;
   }
 }
 
 .about {
   &__container {
     width: 100%;
-    max-width: 320px;
     margin: 0 auto;
-
-    @media screen and (min-width: 768px) {
-      max-width: 688px;
-    }
-
-    @media screen and (min-width: 1366px) {
-      max-width: 1317px;
-    }
   }
 
   &__tablet {
@@ -45,16 +37,16 @@
     font-size: 20px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
       font-size: 26px;
-      padding-bottom: 30px;
+      margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1366px) {
       font-size: 46px;
-      padding-bottom: 50px;
+      margin-bottom: 50px;
     }
   }
 
@@ -135,7 +127,7 @@
     max-width: 253px;
 
     @media screen and (min-width: 768px) {
-      max-width: 375px;
+      min-width: 375px;
     }
 
     @media screen and (min-width: 1366px) {
@@ -154,9 +146,10 @@
     }
   }
 
-  &__description {
+  &__description-list {
+    list-style: none;
     max-width: 279px;
-    padding-top: 26px;
+    padding-top: 20px;
     padding-bottom: 10px;
     font-weight: $fw-medium;
     font-size: 12px;
@@ -166,12 +159,19 @@
     @media screen and (min-width: 768px) {
       max-width: 401px;
       font-size: 10px;
+      padding-bottom: 20px;
     }
 
     @media screen and (min-width: 1366px) {
       max-width: 700.58px;
       font-size: 18px;
       padding-bottom: 20px;
+    }
+  }
+
+  &__description-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
     }
   }
 

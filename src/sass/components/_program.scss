@@ -51,9 +51,10 @@
   }
 
   .program__descr-item {
-    margin-top: 5px;
+    margin-top: 10px;
     @include font($fs: 12px, $fw: 500, $lh: 20px);
-    color: $secondary-color;
+    opacity: 0.5;
+    color: #b9b9b9;
     text-transform: none;
   }
 
@@ -132,7 +133,7 @@
       padding-left: 56px;
 
       &:not(:last-of-type) {
-        padding-bottom: 30px;
+        padding-bottom: 40px;
       }
     }
 
@@ -288,11 +289,11 @@
 
     .program__bg-container {
       position: absolute;
-      bottom: -380px;
+      bottom: -320px;
       right: 0;
       left: -150px;
       z-index: 0;
-      width: 663px;
+      width: 690px;
       height: 502px;
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('../images/our-program/desktop/desktop@1x.jpg');

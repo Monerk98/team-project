@@ -1,30 +1,28 @@
-.container {
-  margin: 0 auto;
-}
-
-/* -------------------------------- Секция ------------------------------- */
 .problems {
   padding: 25px 0 50px 0;
-  background-image: linear-gradient($primary-color 72%, $front-color 0%);
+  background-image: linear-gradient($primary-color 72%, $bg-color 0%);
 
   @media (min-width: 768px) {
-    background-image: linear-gradient($primary-color 62%, $front-color 0%);
+    background-image: linear-gradient($primary-color 62%, $bg-color 0%);
+    padding: 60px 0 50px 0;
   }
   @media (min-width: 1366px) {
-    background-image: linear-gradient($primary-color 78%, $front-color 0%);
+    background-image: linear-gradient($primary-color 66%, $bg-color 0%);
     position: relative;
-    padding-top: 100px;
-    height: 710px;
+    min-height: 840px;
+    padding: 100px 0 130px 0;
   }
 }
+/* ------------------------- Катринка на заднем фоне ------------------------ */
 .problems__bg-icon {
   @media (min-width: 1366px) {
     position: absolute;
-    width: 455px;
+    width: 407px;
     height: 475px;
 
-    bottom: 155px;
-    right: -55px;
+    bottom: 284px;
+    right: 0px;
+    background-repeat: no-repeat;
 
     background-image: url(../images/problems/fire.svg);
   }
@@ -98,7 +96,7 @@
 
   @media (min-width: 1366px) {
     position: absolute;
-    bottom: 0px;
+    bottom: 128px;
 
     width: 1314px;
     height: 362px;
@@ -111,7 +109,6 @@
 .problems__item {
   display: flex;
   flex-direction: column;
-
   counter-increment: counter 0;
 
   @media (min-width: 768px) {
@@ -142,4 +139,39 @@
   line-height: 1.65;
 
   color: $third-color;
+}
+
+// ==================style for button========================
+
+button.up {
+  display: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #ff6b09;
+  border: solid 1px;
+  border-color: #ff6b09;
+  font-weight: bold;
+  position: fixed;
+  z-index: 999;
+  right: -100px;
+  bottom: 20px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: scale(1);
+  box-shadow: 0 0 5px 5px rgba(34, 60, 80, 0.2);
+  transition: box-shadow 0.5s, transform 0.5s;
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  button.up {
+    display: block;
+  }
 }
