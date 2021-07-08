@@ -53,6 +53,7 @@
   .program__descr-item {
     margin-top: 10px;
     @include font($fs: 12px, $fw: 500, $lh: 20px);
+    opacity: 0.5;
     color: #b9b9b9;
     text-transform: none;
   }
