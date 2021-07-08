@@ -1,22 +1,32 @@
 .hero
 {
-    padding-top: 50px;
+    // padding-top: 50px;
     padding-bottom: 77px;
-    // @media screen and (max-width:767px)
-    // {
-    //     background-image: url('../images/header/desktop/wave-mob.png');
-    //     background-repeat: no-repeat;
-    //     background-position: top 0 right 0;
-    // }
+    max-width: 100vw;
+    @media screen and (max-width:767px)
+    {
+        background-image: url('../images/header/desktop/wave-mob.png');
+        background-repeat: no-repeat;
+        background-position: center top 90%;
+        background-size: cover;
+    }
     @media screen and (min-width:768px) and (max-width:1365px)
     {
-        padding-top: 90px;
+        // padding-top: 90px;
         padding-bottom: 50px;
+        background-image: url('../images/header/desktop/wave-tab.png');
+        background-repeat: no-repeat;
+        background-position: center top 90%;
+        background-size: cover;
     }
     @media screen and (min-width:1366px)
     {
-    padding-top: 43px;
+    // padding-top: 43px;
     padding-bottom: 96px;
+    background-image: url('../images/header/desktop/wave-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center top -269%;
+    // background-size: cover;
     }
 }
 .mob__hero

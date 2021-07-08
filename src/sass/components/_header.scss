@@ -1,3 +1,15 @@
+.header{
+    background-color: $front-color;
+    padding-bottom: 50px;
+    @media screen and (min-width:767px)
+    {
+        padding-bottom: 90px;
+    }
+    @media screen and (min-width:1366px)
+    {
+        padding-bottom: 43px;
+    }
+}
 // ==========NAV=============
 .header__nav
 {
@@ -42,6 +54,8 @@
 {
     display: flex;
     position: relative;
+    // background-color: $front-color;
+    // padding-bottom: 50px;
     @media screen and (min-width:320px)
     {
         max-width: 320px;
@@ -50,6 +64,7 @@
     }
     @media screen and (min-width:768px)
     {
+        // padding-bottom: 90px;
         max-width: 687px;
         margin-left: auto;
         margin-right: auto;
