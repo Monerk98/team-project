@@ -15,9 +15,6 @@
   @media (min-width: 768px) and (max-width: 1365px) {
     background-image: linear-gradient(to bottom, $primary-color 45%, $bg-color 45%);
   }
-  @media (min-width: 1366px) {
-    background-image: linear-gradient(to bottom, $primary-color 53%, $bg-color 53%);
-  }
 }
 
 .benefits .container {
@@ -28,7 +25,7 @@
   }
   @media (min-width: 1366px) {
     position: absolute;
-    top: -227px;
+    top: -199px;
     bottom: 0;
     left: 0;
     right: 0;
