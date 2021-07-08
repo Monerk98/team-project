@@ -94,6 +94,7 @@
   }
 
   &__btn {
+    cursor: pointer;
     margin: 0 auto;
     padding: 14px 40px;
     max-width: 260px;
@@ -108,13 +109,19 @@
 
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: $timing-function;
+    transition-timing-function: $cubik;
     transition-delay: 0ms;
   }
 
   &__btn:hover,
   &__btn:focus {
-    background: #df5900;
+    &:hover,
+    &:focus
+    {
+        color:$third-color;
+        background-color: transparent;
+        outline: 2px solid $third-color; 
+    }
   }
 }
 
