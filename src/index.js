@@ -16,6 +16,8 @@ function runSmothLinks() {
     });
   }
 }
+
+runSmothLinks();
 //==========END плавный скролл по якорям=========
 
 //=======кнопка Up adn Down===========
@@ -90,6 +92,5 @@ $buttonUpDown.on('click', function (e) {
     //console.log("Клик по кнопке - вниз "+scrolling);
   }
 });
-//======= END кнопка Up adn Down===========
 
-runSmothLinks();
+//======= END кнопка Up adn Down===========
