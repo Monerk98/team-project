@@ -175,6 +175,12 @@
     line-height: 0;
     margin-left: auto;
     position: absolute;
+    transition: fill 250ms $cubik;
+    &:hover,
+    &:focus
+    {
+        fill: $third-color;
+    }
     @media screen and (max-width:767px)
     {
         top: 38px;
@@ -197,6 +203,7 @@
 {
     cursor: pointer;
     padding: 0;
+    transition: color 250ms $cubik, border 250ms $cubik;
     @media  screen and (max-width:767px)
     {
      display: none;   
@@ -231,6 +238,256 @@
         // margin-right: 60px;
         margin-left: auto;
     }
+    &:hover,
+    &:focus
+    {
+        color: blue;
+        border:2px solid blue;
+    }
+
 }
 // =========BUTTON-consultation end===
+// =========MOBILE MENU=============
+.mobile__menu__container
+{
+    position: fixed;
+    max-width: 320px;
+    @media screen and (min-width:768px) and (max-width:1365px)
+    {
+        max-width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
 
+
+.mobile__menu
+{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    // position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(17, 21, 24, 0.9);
+    overflow: auto;
+    @media screen and (max-width:1365px)
+    {
+        // height: 100vh;
+        // width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    @media screen and(min-width:1366px)
+    {
+    
+            display: none;
+         
+    }
+    // display: none;
+}
+.mobile__menu.is-open
+{
+    // background: transparent;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    position: fixed;
+    @media screen and (max-width:767px)
+    {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    @media screen and (min-width:767px) and (max-width:1365px)
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+.mobile__menu__close
+{
+    border: none;
+    background: transparent;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 37px;
+    right: 22px;
+    @media screen and (min-width:768px) and (max-width:1366px)
+    {
+        top: 58px;
+        right: 83px;
+    }
+    // fill: $front-color;
+
+}
+.mobile__cross{
+    width: 15px;
+    height: 15px;
+    fill: $front-color;
+    &:focus
+    {
+        fill: $third-color; 
+    }
+
+}
+// .mobile__menu__close:hover,
+// .mobile__menu__close:focus
+// {
+//     fill: $third-color;
+// }
+// ========Студия, Портфолио, КОнтакты
+.mobile__menu__link
+{
+    display: block;
+    font-weight: $fw-black;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: $front-color;
+    transition: color 250ms $cubik;
+    @media screen and (min-width:768px)
+    {
+    font-size: 26px;
+    }
+    &:focus,
+    &:hover
+{
+    color: $third-color
+}
+}
+.mobile__menu__nav
+{
+    margin-top: 45px;
+    margin-bottom: 30px;
+    width: 260px;
+    // padding-left: 20px;
+    padding-right: 20px;
+    @media screen and (min-width:768px) and (max-width:1365px)
+    {
+        margin-top: 72px;
+        margin-bottom: 0;
+        width: 332px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.mobile__title:not(:last-child)
+{
+    margin-bottom: 6px;
+}
+.mob-btn-cons
+{
+    border: 2px solid $third-color;
+    color: $third-color;
+    width: 260px;
+    font-weight: $fw-bold;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 14px 1px 14px 1px;
+    margin-left: 10px;
+    background: transparent;
+    @media screen and (min-width:768px)
+    {
+        display: none;
+    }
+}
+// =========MOB_LOGO========
+.mob__container
+{
+    display: inline-flex;
+    flex-direction: column;
+    width: 120px;
+    @media screen and (max-width:767px)
+    {
+        width: 80px;
+    }
+}
+.mob__link
+{
+    display: inline-block;
+    @media screen and (max-width:767px)
+    {
+        padding-top: 30px;
+    }
+    @media screen and (min-width:768px)
+    {
+        padding-top: 41px;
+        margin-left: 40px;
+    }
+}
+.mob__img__container
+{
+    display: inline-flex;
+}
+.logo__mob
+{
+    font-weight: $fw-black;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: $front-color;
+    @media screen and (max-width:767px)
+    {
+        font-size: 18px;
+    }
+}
+
+.logo__mob__camp
+{
+    width: 22px;
+    height: 30px;
+    @media screen and(max-width:767px)
+    {
+        width: 14px;
+        height: 19px;
+        // margin-top: 5px;
+    }
+    @media screen and (min-width:1366px)
+    {
+        // margin-top: 5px;
+    }
+}
+.inner__mob__container
+{
+    line-height: 0;
+}
+.logo__mob__down
+{
+    font-weight: $fw-bold;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $third-color;
+    margin-right: 6px;
+    @media  screen and (max-width:767px) {
+        margin-right: 3px;
+        font-size: 6px;
+    }
+}
+.logo__mob__english
+{
+    font-weight: $fw-bold;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $front-color;
+    @media screen and (max-width:767px)
+    {
+        font-size: 6px;
+    }
+}

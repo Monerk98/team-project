@@ -1,6 +1,6 @@
 <header class="header">
     <div class="container header__container">
-            <a href="" class="header__link link">
+            <a href="#" class="header__link link">
                 <div class="logo__container">
                 <div class="img__container">
                 <span class="logo">Hell</span>
@@ -37,10 +37,55 @@
                 </ul>
         </nav>
         <button class="header__consultation">consultation by phone</button>
-        <button type="button" class="header__button btn">
+        <button type="button" class="header__button btn" data-menu-button>
             <svg class="menu__icon" width='20' height='12'>
                 <use href="./images/icons.svg#icon-menu"></use>
             </svg>
         </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile__menu " data-menu>
+        <div class=" container mobile__menu__container">
+            <button type="button" class="mobile__menu__close" data-menu-close>
+                <svg class="mobile__cross">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <a href="#" class="mob__link link">
+                <div class="mob__container">
+                <div class="mob__img__container">
+                <span class="logo__mob">Hell</span>
+                <img class="logo__mob__camp" src="./images/header/mobile/campfire.svg" alt="camp">
+                <span class="logo__mob">EN</span>
+            </div>
+                <div class="inner__mob__container">
+                    <span class="logo__mob__down">hellish</span><span class="logo__mob__english">english</span>
+                </div>
+            </div>
+            </a>
+            <ul class="mobile__menu__nav list">
+                <li class="mobile__title">
+                    <a href="#" class="mobile__menu__link mob__current link">
+                        Studying program
+                </a>
+                </li>
+                <li class="mobile__title">
+                    <a href="#" class="mobile__menu__link link">
+                        About
+                </a>
+                </li>
+                <li class="mobile__title contact__title">
+                    <a href="" class="mobile__menu__link   link">
+                        Training options
+                </a>
+                </li>
+                <li class="mobile__title contact__title">
+                    <a href="" class="mobile__menu__link   link">
+                        Contacts
+                </a>
+                </li>
+            </ul>
+            <button type="button" class="mob-btn-cons">consutation by phone</button>
+        </div>
     </div>
 </header>

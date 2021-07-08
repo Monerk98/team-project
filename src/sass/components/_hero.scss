@@ -10,6 +10,17 @@
         background-position: center top 90%;
         background-size: cover;
     }
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px){
+        .hero
+        {
+            background-image: url('../images/header/desktop/wave-mob@2x.png');
+            background-repeat: no-repeat;
+            background-position: center top 90%;
+            background-size: cover;
+        }
+    }
     @media screen and (min-width:768px) and (max-width:1365px)
     {
         // padding-top: 90px;
@@ -19,6 +30,17 @@
         background-position: center top 90%;
         background-size: cover;
     }
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px){
+        .hero
+        {
+            background-image: url('../images/header/desktop/wave-tab@2x.png');
+            background-repeat: no-repeat;
+            background-position: center top 90%;
+            background-size: cover;
+        }
+    }
     @media screen and (min-width:1366px)
     {
     // padding-top: 43px;
@@ -27,6 +49,17 @@
     background-repeat: no-repeat;
     background-position: center top -100%;
     // background-size: cover;
+    }
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px){
+        .hero
+        {
+            background-image: url('../images/header/desktop/wave-desktop@2x.png');
+            background-repeat: no-repeat;
+            background-position: center top 90%;
+            background-size: cover;
+        }
     }
 }
 .mob__hero
