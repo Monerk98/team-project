@@ -140,10 +140,6 @@
         bottom: -15px;
       }
     }
-
-    .cards__descr {
-      @include font($fs: 12px, $fw: $fw-medium, $lh: 28px);
-    }
   }
 }
 
