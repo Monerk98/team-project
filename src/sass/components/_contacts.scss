@@ -66,6 +66,7 @@
     background-color: transparent;
     color: $front-color;
     border: 1px solid $front-color;
+    cursor: pointer;
 
     transition-property: border-color;
     transition-duration: 250ms;
@@ -183,8 +184,10 @@
 //ПК
 @media screen and (min-width: 1366px) {
   .contacts {
+    margin: 0 auto;
+    max-width: 1366px;
     background-image: url('../images/contacts/newpc.png');
-    background-size: auto;
+    background-size:  auto;
     
 
     &__container {
