@@ -44,10 +44,11 @@
     @media screen and (min-width:1366px)
     {
     // padding-top: 43px;
-    padding-bottom: 96px;
-    background-image: url('../images/header/desktop/wave-desktop.png');
-    background-repeat: no-repeat;
-    background-position: center top -100%;
+        padding-bottom: 96px;
+        background-image: url('../images/header/desktop/wave-desktop.png');
+        background-repeat: no-repeat;
+        background-position: center top 105%;
+        background-size: cover;
     // background-size: cover;
     }
     @media (min-device-pixel-ratio: 2) and (min-width: 768px),
