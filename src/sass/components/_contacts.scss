@@ -1,7 +1,8 @@
 .contacts {
   max-width: 100%;
   background-color: $primary-color;
-  background-image: url('../images/contacts/mob.png');
+  // background-image: url('../images/contacts/mob.png');
+  background-color: $pur-color;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -30,7 +31,7 @@
   }
 
   &__text-accent {
-    color: $third-color;
+    color: $logo;
   }
 
   &__description {
@@ -104,9 +105,13 @@
     line-height: 1.25;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    // color: $front-color;
+    // background-color: $third-color;
+    // border: transparent;
+    outline: 1px solid $new-color;
+    border: none;
+    background: transparent;
     color: $front-color;
-    background-color: $third-color;
-    border: transparent;
 
     transition-property: background-color;
     transition-duration: 250ms;
@@ -119,9 +124,9 @@
     &:hover,
     &:focus
     {
-        color:$third-color;
+        color:$logo;
         background-color: transparent;
-        outline: 2px solid $third-color; 
+        outline: 1px solid $logo; 
     }
   }
 }
@@ -130,7 +135,8 @@
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
   .contacts {
-    background-image: url('../images/contacts/mob@2x.png');
+    // background-image: url('../images/contacts/mob@2x.png');
+    background-color: $pur-color;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -141,7 +147,8 @@
 //планшет
 @media screen and (min-width: 768px) {
   .contacts {
-    background-image: url('../images/contacts/tab.png');
+    // background-image: url('../images/contacts/tab.png');
+    background-color: $pur-color;
     
    
     &__container {
@@ -181,7 +188,8 @@
   (min-resolution: 192dpi) and (min-width: 768px),
   (min-resolution: 2dppx) and (min-width: 768px) {
   .contacts {
-    background-image: url('../images/contacts/tab@2x.png');
+    // background-image: url('../images/contacts/tab@2x.png');
+    background-color: $pur-color;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -193,7 +201,8 @@
   .contacts {
     margin: 0 auto;
     max-width: 1688px;
-    background-image: url('../images/contacts/newpc.png');
+    // background-image: url('../images/contacts/newpc.png');
+    background-color: $pur-color;
     background-size:  auto;
     
 
@@ -247,9 +256,9 @@
     &__btn {
       margin: 0 auto;
 
-      max-width: 354px;
+      max-width: 369px;
       padding: 25px 71px;
-      max-width: 354px;
+      // max-width: 354px;
     }
   }
 }
@@ -258,7 +267,8 @@
   (min-resolution: 192dpi) and (min-width: 1366px),
   (min-resolution: 2dppx) and (min-width: 1366px) {
   .contacts {
-    background-image: url('../images/contacts/newpc@2x.png');
+    // background-image: url('../images/contacts/newpc@2x.png');
+    background-color: $pur-color;
     background-repeat: no-repeat;
      background-position: center;
      background-size:  1680px 840px;

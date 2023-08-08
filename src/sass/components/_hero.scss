@@ -114,6 +114,7 @@
     letter-spacing: 0.03em;
     color: $primary-color;
     margin-bottom: 8px;
+    padding-top: 20px;
     @media screen and (min-width:767px) and (max-width:1365px)
     {
         font-size: 26px;
@@ -122,7 +123,7 @@
     }
     @media screen and (min-width:1366px)
     {
-        width: 660px;
+        width: 560px;
         font-size: 58px;
         margin-bottom: 8px;
         padding-top: 113px;
@@ -172,7 +173,7 @@
     line-height: 1.25;
     text-transform: uppercase;
     border: none;
-    background: $third-color;
+    background: #7041F5;
     color: $front-color;
     padding: 14px 40px 14px 40px;
     width: 260px;
@@ -192,7 +193,7 @@
     @media screen and (min-width:1366px)
     {
         // margin-left: 70px;
-        width: 354px;
+        width: 385px;
         line-height: 1.21;
         padding: 27px 70px 27px 70px;
         letter-spacing: 0.14em;
@@ -203,9 +204,10 @@
     &:hover,
     &:focus
     {
-        color:$third-color;
+        color:$pur-color;
         background-color: transparent;
-        outline: 2px solid $third-color; 
+        outline: 2px solid #7041F5; 
+        // border: solid $pur-color;
     }
 }
 .hero__pic

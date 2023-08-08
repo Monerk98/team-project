@@ -1,13 +1,13 @@
 .problems {
   padding: 25px 0 50px 0;
-  background-image: linear-gradient($primary-color 72%, $bg-color 0%);
+  background-image: linear-gradient($pur-color 72%, $pur-color 0%);
 
   @media (min-width: 768px) {
-    background-image: linear-gradient($primary-color 62%, $bg-color 0%);
+    background-image: linear-gradient($pur-color 62%, $pur-color 0%);
     padding: 60px 0 50px 0;
   }
   @media (min-width: 1366px) {
-    background-image: linear-gradient($primary-color 66%, $bg-color 0%);
+    background-image: linear-gradient($pur-color 66%, $pur-color 0%);
     position: relative;
     min-height: 840px;
     padding: 100px 0 130px 0;
@@ -21,7 +21,7 @@
     height: 475px;
 
     bottom: 284px;
-    right: 0px;
+    right: 130px;
     background-repeat: no-repeat;
 
     background-image: url(../images/problems/fire.svg);
@@ -73,7 +73,9 @@
   height: 510px;
 
   background: $front-color;
-  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  border-radius: 50px;
+  // box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 1.1);
 
   padding: 19px 20px 19px 31px;
 

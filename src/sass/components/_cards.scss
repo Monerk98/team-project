@@ -4,10 +4,11 @@
     margin-right: auto;
   }
 
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 
   .cards__section-title {
     margin-bottom: 30px;
+    color: $new-color;
     @include font($fs: 20px, $fw: $fw-black, $lh: 26px);
     text-align: center;
   }
@@ -26,7 +27,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
-    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    color: $new-color;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 1.1);
     cursor: pointer;
     list-style: none;
     transition: background-color 250ms $cubik;
@@ -46,7 +48,7 @@
   .cards__svg {
     display: block;
     margin: 0 auto 12px;
-    fill: $third-color;
+    fill: $logo;
     transition: fill 250ms $cubik;
   }
 
@@ -65,7 +67,7 @@
       display: block;
       width: 20px;
       height: 2px;
-      background-color: $third-color;
+      background-color: $logo;
       transform: translateX(-50%);
       transition: background-color 250ms $cubik;
     }
