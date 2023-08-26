@@ -3,23 +3,28 @@
   @media (max-width: 767px) {
     text-align: center;
   }
+
   @media (min-width: 1366px) {
     padding-top: 55px;
   }
 }
+
 .footer__container {
   padding: 0;
   margin: 0 auto;
 }
+
 // Обертка для контактов
 .footer__contacts {
   margin-right: auto;
   margin-left: auto;
+
   @media (max-width: 767px) {
     padding-top: 30px;
     padding-bottom: 30px;
     max-width: 320px;
   }
+
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -32,6 +37,7 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
   @media (min-width: 1366px) {
     padding-bottom: 55px;
     display: flex;
@@ -54,6 +60,7 @@
   @media (max-width: 767px) {
     margin-bottom: 30px;
   }
+
   @media (min-width: 768px) {
     font-size: 20px;
     padding-right: 24px;
@@ -62,6 +69,7 @@
     padding-top: 8px;
     padding-bottom: 8px;
   }
+
   @media (min-width: 768px) and (max-width: 1365px) {
     margin-left: auto;
   }
@@ -81,10 +89,12 @@
   margin-right: 10px;
 
   fill: $third-color;
+
   @media (min-width: 768px) {
     width: 24px;
     height: 23px;
   }
+
   @media (min-width: 1366px) {
     width: 30px;
     height: 29px;
@@ -94,6 +104,7 @@
 // Бокс для иконки инстаграма для футера
 .footer__box-icon {
   display: block;
+
   @media (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
@@ -104,36 +115,30 @@
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../images/footer/instagram-icon.svg),
-    radial-gradient(
-      110.28% 110.28% at 20.5% 87.39%,
-      #fae100 0%,
-      #fadc04 5.44%,
-      #fbce0e 11.67%,
-      #fcb720 18.29%,
-      #fe9838 25.14%,
-      #ff7950 30.54%,
-      #ff1c74 49.22%,
-      #6c1cd1 100%
-    ),
-    linear-gradient(318.52deg, rgba(131, 58, 180, 0) 64.74%, #833ab4 106.74%),
-    linear-gradient(315deg, rgba(131, 58, 180, 0) 39.5%, #833ab4 115.97%),
-    linear-gradient(348.01deg, rgba(131, 58, 180, 0) 16.68%, #833ab4 83.38%),
-    linear-gradient(314.85deg, rgba(131, 58, 180, 0) 68.66%, #833ab4 99.14%),
-    linear-gradient(
-      180deg,
-      rgba(250, 225, 0, 0) 41.26%,
-      rgba(252, 168, 0, 0.305882) 65.21%,
-      rgba(254, 115, 0, 0.627451) 90.26%,
-      rgba(255, 82, 0, 0.866667) 109.08%,
-      #ff4500 119.35%
-    ),
-    linear-gradient(
-      299.36deg,
-      rgba(161, 181, 216, 0) 61.06%,
-      rgba(144, 162, 189, 0.309804) 110.82%,
-      rgba(124, 139, 156, 0.756863) 182.56%,
-      #748290 221.9%
-    );
+  radial-gradient(110.28% 110.28% at 20.5% 87.39%,
+    #fae100 0%,
+    #fadc04 5.44%,
+    #fbce0e 11.67%,
+    #fcb720 18.29%,
+    #fe9838 25.14%,
+    #ff7950 30.54%,
+    #ff1c74 49.22%,
+    #6c1cd1 100%),
+  linear-gradient(318.52deg, rgba(131, 58, 180, 0) 64.74%, #833ab4 106.74%),
+  linear-gradient(315deg, rgba(131, 58, 180, 0) 39.5%, #833ab4 115.97%),
+  linear-gradient(348.01deg, rgba(131, 58, 180, 0) 16.68%, #833ab4 83.38%),
+  linear-gradient(314.85deg, rgba(131, 58, 180, 0) 68.66%, #833ab4 99.14%),
+  linear-gradient(180deg,
+    rgba(250, 225, 0, 0) 41.26%,
+    rgba(252, 168, 0, 0.305882) 65.21%,
+    rgba(254, 115, 0, 0.627451) 90.26%,
+    rgba(255, 82, 0, 0.866667) 109.08%,
+    #ff4500 119.35%),
+  linear-gradient(299.36deg,
+    rgba(161, 181, 216, 0) 61.06%,
+    rgba(144, 162, 189, 0.309804) 110.82%,
+    rgba(124, 139, 156, 0.756863) 182.56%,
+    #748290 221.9%);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   border-radius: 14px;
@@ -149,15 +154,19 @@
   margin-right: auto;
 
   color: $secondary-color;
+
   @media (min-width: 768px) {
     padding-left: 40px;
   }
+
   @media (max-width: 767px) {
     max-width: 320px;
   }
+
   @media (min-width: 768px) and (max-width: 1365px) {
     max-width: 768px;
   }
+
   @media (min-width: 1366px) {
     max-width: 1366px;
   }
@@ -172,6 +181,7 @@
 .footer__logo {
   display: block;
   padding: 0;
+
   @media (max-width: 767px) {
     margin-bottom: 20px;
   }
@@ -181,6 +191,7 @@
   display: inline-flex;
   flex-direction: column;
   width: 120px;
+
   @media screen and (max-width: 767px) {
     width: 80px;
   }
@@ -189,12 +200,14 @@
 .footer-img__container {
   display: inline-flex;
 }
+
 .footer-logo {
   font-weight: $fw-black;
   font-size: 26px;
   line-height: 1.23;
   letter-spacing: 0.04em;
   color: $primary-color;
+
   @media screen and (max-width: 767px) {
     font-size: 18px;
   }
@@ -203,27 +216,32 @@
 .footer-logo__camp {
   width: 22px;
   height: 30px;
+
   @media screen and (max-width:767px) {
     width: 14px;
     height: 19px;
   }
 }
+
 .footer-inner__container {
   line-height: 0;
 }
+
 .footer-logo__down {
   font-weight: $fw-bold;
   font-size: 8px;
   line-height: 1.25;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: $third-color;
+  color: #33ff00;
   margin-right: 6px;
+
   @media screen and (max-width: 767px) {
     margin-right: 3px;
     font-size: 6px;
   }
 }
+
 .footer-logo__english {
   font-weight: $fw-bold;
   font-size: 8px;
@@ -231,6 +249,7 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: $primary-color;
+
   @media screen and (max-width: 767px) {
     font-size: 6px;
   }
